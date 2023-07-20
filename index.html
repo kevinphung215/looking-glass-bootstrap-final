@@ -16,12 +16,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- AOS animation scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Looking Glass Security</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark  bg-dark">
+        <nav class="navbar navbar-expand-lg" style="background-color: #9d9d9d;">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="img/lgslogo2.png" alt="" class="logo">
@@ -31,7 +34,7 @@
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto fw-medium" >
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">HOME</a>
                         </li>
@@ -62,11 +65,13 @@
             <div class="row">
                 <div class="col-lg-4 col-md-12 col-12 d-flex justify-content-center justify-content-lg-start">
                     <div class="about-img">
-                        <img src="img/computers.jpg" alt="" class="img-fluid rounded">
+                        <img src="img/computers.jpg" alt="" class="img-fluid rounded" data-aos="fade-right"
+                        data-aos-duration="1000">
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5 d-flex justify-content-center justify-content-lg-start">
-                    <div class="about-text text-white text-center text-lg-start">
+                    <div class="about-text text-white text-center text-lg-start" data-aos="fade-left"
+                    data-aos-duration="1300">
                         <h2>About Us</h2>
                         <p><strong>Looking Glass Security</strong> offers top-notch security solutions, specializing in structured cabling, CCTV systems, Wi-Fi access points, access control, and more. Our experienced team designs and installs reliable network infrastructure, advanced surveillance systems, and secure access control setups. We provide tailored solutions, expert maintenance, and exceptional customer service. Choose Looking Glass Security for peace of mind and optimal security. Contact us today.</p>
                     </div>
@@ -76,7 +81,7 @@
     </section>
     
     <!-- services -->
-    <section id="portfolio" class="py-5 portfolio section-padding text-white">
+    <section id="services" class="py-5 portfolio section-padding text-white">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -88,40 +93,66 @@
             </div>
     
             <div class="row">
-                <div class="col-12 col-md-12 col-lg-4 py-2">
+                <div class="col-12 col-md-12 col-lg-4 py-2" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="card text-center">
+                        <div class=" text-dark">
+                            <div class="img-area">
+                                <img src="img/cameraInstall2.jpg" alt="Image 1" class="img-fluid rounded">
+                            </div>
+                            <div class="centered-text">
+                                <h3 class="card-title">CCTV Surveillance</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4 py-2" data-aos="zoom-in" data-aos-duration="1100">
                     <div class="card text-center">
                         <div class=" text-dark">
                             <div class="img-area">
                                 <img src="img/diagram.jpg" alt="Image 1" class="img-fluid rounded">
                             </div>
                             <div class="centered-text">
-                                <h3 class="card-title">Network</h3>
+                                <h3 class="card-title">Wifi / Data</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4 py-2" data-aos="zoom-in" data-aos-duration="1200">
+                    <div class="card text-center">
+                        <div class=" text-dark">
+                            <div class="img-area">
+                                <img src="img/videoaudio.jpg" alt="Image 1" class="img-fluid rounded">
+                            </div>
+                            <div class="centered-text">
+                                <h3 class="card-title">Audio / Video</h3>
                             </div>
                         </div>
                     </div>
                 </div>
     
-                <div class="col-12 col-md-12 col-lg-4 py-2">
+                <div class="col-12 col-md-12 col-lg-4 py-2" data-aos="zoom-in" data-aos-duration="1300">
                     <div class="card text-center">
                         <div class=" text-dark">
                             <div class="img-area">
-                                <img src="img/cameras.jpg" alt="Image 2" class="img-fluid rounded">
+                                <img src="img/wirelessserver.jpg" alt="Image 2" class="img-fluid rounded">
                             </div>
                             <div class="centered-text">
-                                <h3 class="card-title">Video Surveillance</h3>
+                                <h3 class="card-title">System Design</h3>
                             </div>
                         </div>
                     </div>
                 </div>
     
-                <div class="col-12 col-md-12 col-lg-4 py-2">
+                <div class="col-12 col-md-12 col-lg-4 py-2" data-aos="zoom-in" data-aos-duration="1400">
                     <div class="card text-center">
                         <div class=" text-dark">
                             <div class="img-area">
-                                <img src="img/accesscontrol.jpg" alt="Image 3" class="img-fluid rounded">
+                                <img src="img/cctvcable.jpg" alt="Image 3" class="img-fluid rounded">
                             </div>
                             <div class="centered-text">
-                                <h3 class="card-title">Access Control</h3>
+                                <h3 class="card-title">Structured Wiring</h3>
                             </div>
                         </div>
                     </div>
@@ -166,7 +197,7 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="mb-3">
-                                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone" required class="form-control">
+                                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Phone" required class="form-control">
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -186,22 +217,24 @@
         </div>
     </section>
 
-    <footer id="footer" class="py-3 bg-dark text-white">
+    <footer id="footer" class="py-3 text-black" style="background-color: #9d9d9d;">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-3">
-                <img src="img/lgslogo2.png" alt="" class="img-fluid footerLogo">
+                <div class="col-md-3 fw-medium">
+                    <img src="img/lgslogo2.png" alt="" class="img-fluid footerLogo">
+                    <p>Authorized Xfinity Business Sales Rep Licensed & Insured</p>
                     <address>
                         2 Stockdale Ave Suite C
-                        <br>Claymont DE 19703
+                        <br>
+                        Claymont DE 19703
                     </address>
                     <p>lgsllc22@gmail.com</p>
                     <p>302-439-3038</p>
-                    <!-- <ul class="list-unstyled social">
-                        <li><a href="http://www.facebook.com"><i class="bi bi-facebook"></i></a></li>
-                        <li><a href="http://www.linkedin.com"><i class="bi bi-linkedin"></i></a></li>
-                        <li><a href="http://www.instagram.com"><i class="bi bi-instagram"></i></a></li>
-                    </ul> -->
+                        <!-- <ul class="list-unstyled social">
+                            <li><a href="http://www.facebook.com"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="http://www.linkedin.com"><i class="bi bi-linkedin"></i></a></li>
+                            <li><a href="http://www.instagram.com"><i class="bi bi-instagram"></i></a></li>
+                        </ul> -->
                 </div>
 
                 <div class="col-md-3">
@@ -233,6 +266,11 @@
     <!-- Bootstrap JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <!-- Aos animation scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
